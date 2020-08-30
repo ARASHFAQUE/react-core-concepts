@@ -2,25 +2,27 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+function App(){
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit done <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <p>I am a React Person</p>
+      <Person></Person>
+      <Person></Person>
+      <Person></Person>
+      <Person></Person>
       </header>
     </div>
   );
 }
+function Person(){
+  return (
+  <div style={{border:'2px solid red', margin:'10px', padding:'5px 15px'}}>
+    <h1>Name: Shakib Al Hasan</h1>
+    <h3>Best Of All Time</h3>
+  </div>
+  )
+}
+
 
 export default App;
